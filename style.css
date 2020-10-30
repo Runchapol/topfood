@@ -1,0 +1,166 @@
+body{
+	overflow-x: hidden;
+}
+img{
+	width: 60%;
+	height: auto;
+}
+h1,h2,h3,h4,h5{
+	text-align: center;
+}
+.cont{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 5%;
+}
+.middle{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.head01{
+	margin-right: 30%;
+	padding-top: 20%;
+}
+.head02{
+	margin-right: 30%;
+	padding-top: 10%;
+}
+.bg01{
+	padding-top: 50px;
+	width: auto;
+	height: 970px;
+	background-image: url('img/bg01.jpg');
+  background-attachment: relative;
+  background-repeat: no-repeat;
+}
+.bg02{
+	padding-top: 50px;
+	width: auto;
+	height: 1180px;
+	background-color: #00000a;
+}
+
+/*Menu bar*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a,.dropdown-btn01,.dropdown-btn02 {
+  padding: 8px 8px 8px 32px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+
+.sidebar a:hover, .dropdown-btn01:hover,.dropdown-btn02:hover {
+  color: #f1f1f1;
+}
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  position: fixed;
+  left: 3%;
+  top: 3%;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+.ul{
+    position: fixed;
+    right: 1rem;
+    top: 30%;
+    z-index: 100;
+    width: 10%;
+}
+.navig:hover {
+    filter: drop-shadow(0 0 7px rgb(255, 255, 255, 1));
+    fill: rgb(255, 255, 255, 1);
+}
+
+.navig {
+    transition: .3s;
+    fill: rgb(255, 255, 255, 0);
+}
+
+/*Animation1*/
+.an01 {
+  position: absolute;
+  animation: an01 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+@keyframes an01 {
+	0%{ transform: rotate(-360deg); opacity: 0; left: -500px}
+	45%{ transform: rotate(0deg); opacity: 1; left: 100px;}
+}
+
+.an02 {
+  position: absolute;
+  animation: an02 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+@keyframes an02 {
+	0% { opacity: 1; }
+	20% { opacity: 0; }
+}
+
+/*Animation2*/
+.Eff1{
+	position: relative;
+	animation-name: Eff1;
+	animation-duration: 1.5s;
+}
+@keyframes Eff1 { 
+  from{ bottom: -100px; opacity:0 ;} 
+  to{ bottom: 0px; opacity:1 ;}
+}
+
+.rightop{
+	position: relative;
+	animation-name: rightop;
+	animation-duration: 1.5s;
+}
+@keyframes rightop { 
+  from{ right: 500px; opacity:0 ;transform: rotate(0deg);} 
+  to{ right: 0px; opacity:1 ;transform: rotate(360deg);}
+}

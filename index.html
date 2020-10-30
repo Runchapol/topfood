@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	
+	<link href="https://fonts.google.com/specimen/Pridi?subset=thai" rel="stylesheet">
+</head>
+<body>
+	<div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		<a href="#">หน้าหลัก</a>
+		<a class="dropdown-btn01">เมนูอาหาร</a>
+		<div class="dropdown-container">
+			<a href="">ข้าวขาหมู</a>
+		</div>
+		<a class="dropdown-btn02">สารอาหาร</a>
+		<div class="dropdown-container">
+			<a href="">โปรตีน</a>
+			<a href="">คาร์โบไฮเดรต</a>
+			<a href="">วิตามิน</a>
+			<a href="">เกลือแร่</a>
+			<a href="">ไขมัน</a>
+		</div>
+		<a href="#">คำนวณ BMI</a>
+	</div>
+
+	<button class="openbtn" onclick="openNav()">☰ Menu</button>
+	<div class="bg01" id="h1">
+		<h1>ข้าวขาหมูวว</h1>
+		<div class="cont">
+			<div class="row">
+				<div class="col">
+					<img src="img/kamu01.png" class="middle rightop">
+				</div>
+				<div class="col">
+					<div class="head01 Eff1">
+						<h3>ทำไมมัน ห อ ม ได้ขนาดนี้</h3>
+						<h2>"เพราะความอร่อย ต้องย่อยยาก"</h2>
+						<h1></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bg02" id="h2">
+		<div class="cont" style="height: 1080px;">
+			<div class="row" style="height: 540px;">
+				<div class="col-6">
+					<img src="img/01.png" class="middle an01">
+				</div>
+				<div class="col-6">
+					<div class="head02">
+						<h3>โปรตีน 62 กรัม</h3>
+						<h3>คาร์โบไฮเดรต 22 กรัม</h3>
+						<h3>วิตามิน 2 กรัม</h3>
+						<h3>เกลือแร่ 2 กรัม</h3>
+						<h3>ไขมัน 18 กรัม</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="height: 540px;">
+				<div class="col-6">
+					<div>
+						<h1 class="head01">กราฟสารอาหาร</h1>
+					</div>
+				</div>
+				<div class="col-6">
+					<div id="piechart"></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="bg01" id="h3">
+		
+	</div>
+	<div class="ul">
+        <svg height="100" width="100" onclick="location.href='#h1';" style="cursor:pointer;" class="navig">
+            <circle cx="20" cy="20" r="7" stroke="white" stroke-width="2"/>
+        </svg>
+        <svg height="100" width="100" onclick="location.href='#h2';" style="cursor:pointer;" class="navig">
+            <circle cx="20" cy="20" r="7" stroke="white" stroke-width="2"/>
+        </svg>
+        <svg height="100" width="100" onclick="location.href='#h3';" style="cursor:pointer;" class="navig">
+            <circle cx="20" cy="20" r="7" stroke="white" stroke-width="2"/>
+        </svg>
+    </div>
+
+	<script>
+		window.addEventListener('scroll', () => {
+			document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+		}, false);
+		function openNav() {
+		  document.getElementById("mySidebar").style.width = "300px";
+		}
+
+		function closeNav() {
+		  document.getElementById("mySidebar").style.width = "0";
+		}
+		var dropdown01 = document.getElementsByClassName("dropdown-btn01");
+		var i;
+		for (i = 0; i < dropdown01.length; i++) {
+		  dropdown01[i].addEventListener("click", function() {
+		  this.classList.toggle("active");
+		  var dropdownContent = this.nextElementSibling;
+		  if (dropdownContent.style.display === "block") {
+		  dropdownContent.style.display = "none";
+		  } else {
+		  dropdownContent.style.display = "block";
+		  }
+		  });
+		}
+
+		var dropdown02 = document.getElementsByClassName("dropdown-btn02");
+		var j;
+		for (j = 0; j < dropdown02.length; j++) {
+		  dropdown02[j].addEventListener("click", function() {
+		  this.classList.toggle("active");
+		  var dropdownContent = this.nextElementSibling;
+		  if (dropdownContent.style.display === "block") {
+		  dropdownContent.style.display = "none";
+		  } else {
+		  dropdownContent.style.display = "block";
+		  }
+		  });
+		}
+	</script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+	<script type="text/javascript">
+	// Load google charts
+	google.charts.load('current', {'packages':['corechart']});
+	google.charts.setOnLoadCallback(drawChart);
+
+	// Draw the chart and set the chart values
+	function drawChart() {
+	  var data = google.visualization.arrayToDataTable([
+	  ['สารอาหาร', 'ต่อจาน'],
+	  ['โปรตีน', 62],
+	  ['คาร์โบไฮเดรต',22],
+	  ['วิตามิน', 2],
+	  ['เกลือแร่', 2],
+	  ['ไขมัน', 18]
+	]);
+
+	  // Optional; add a title and set the width and height of the chart
+	  var options = {'title':'ปริมาณสารอาหาร', 'width':550, 'height':400};
+
+	  // Display the chart inside the <div> element with id="piechart"
+	  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+	  chart.draw(data, options);
+	}
+	</script>
+</body>
+</html>
