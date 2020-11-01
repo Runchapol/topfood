@@ -8,6 +8,26 @@ img{
 h1,h2,h3,h4,h5{
 	text-align: center;
 }
+.foot{
+  width: 100%;
+  height: 128px;
+  background-color: #1919a4;
+}
+.qs{
+  transition: 1s;
+  position: relative;
+  top: 50px;
+  cursor: pointer;
+  z-index: 5;
+}
+.ans{
+  transition: 1.5s;
+  position: absolute;
+  top: 2300px;
+  left: 20%;
+  opacity: 0;
+  z-index: 1;
+}
 .cont{
 	margin-left: auto;
 	margin-right: auto;
@@ -128,7 +148,9 @@ h1,h2,h3,h4,h5{
 }
 @keyframes an01 {
 	0%{ transform: rotate(-360deg); opacity: 0; left: -500px}
-	45%{ transform: rotate(0deg); opacity: 1; left: 100px;}
+	40%{ transform: rotate(0deg); opacity: 1; left: 100px;}
+  50%{ transform: rotate(0deg); opacity: 1; left: 100px;}
+  70%{ transform: rotate(-360deg); opacity: 0; left: -500px;}
 }
 
 .an02 {
@@ -140,27 +162,76 @@ h1,h2,h3,h4,h5{
   animation-fill-mode: both;
 }
 @keyframes an02 {
-	0% { opacity: 1; }
-	20% { opacity: 0; }
+	0% { opacity: 0; right: -500px;}
+	40% { opacity: 1; right: 20%;}
+  50% { opacity: 1; right: 20%;}
+  70% { opacity: 0; right: -500px;}
+}
+.an03 {
+  position: absolute;
+  animation: an03 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+@keyframes an03 {
+  38% { opacity: 0; right: 500px;}
+  47% { opacity: 1; right: 50px;}
+  67% { opacity: 1; right: 50px;}
+  87% { opacity: 0; right: 500px;}
+}
+.an04 {
+  position: absolute;
+  animation: an04 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+@keyframes an04 {
+  35% { opacity: 0; transform: scale(0);}
+  47% { opacity: 1; transform: scale(1);}
+  67% { opacity: 1; transform: scale(1);}
+  87% { opacity: 0; transform: scale(0);}
+}
+.an05 {
+  position: relative;
+  animation: an05 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+@keyframes an05 {
+  80% { opacity: 0; top: -100px;}
+  85% { opacity: 1; top:0px;}
+  100%{opacity: 1;}
 }
 
 /*Animation2*/
-.Eff1{
-	position: relative;
-	animation-name: Eff1;
-	animation-duration: 1.5s;
+.Eff1 {
+  position: relative;
+  animation: Eff1 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
 }
-@keyframes Eff1 { 
-  from{ bottom: -100px; opacity:0 ;} 
-  to{ bottom: 0px; opacity:1 ;}
+@keyframes Eff1 {
+  0% { opacity: 1; top: 0px; transform: scale(1);}
+  40% { opacity: 0; top: 400px; transform: scale(0);}
 }
 
-.rightop{
-	position: relative;
-	animation-name: rightop;
-	animation-duration: 1.5s;
+.Eff2 {
+  position: relative;
+  animation: Eff2 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
 }
-@keyframes rightop { 
-  from{ right: 500px; opacity:0 ;transform: rotate(0deg);} 
-  to{ right: 0px; opacity:1 ;transform: rotate(360deg);}
+@keyframes Eff2 {
+  0% { opacity: 1; top: 0px; transform: scale(1);}
+  40% { opacity: 0; top: 200px; transform: scale(0);}
 }
