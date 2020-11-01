@@ -63,6 +63,13 @@ h1,h2,h3,h4,h5{
 	height: 1180px;
 	background-color: #00000a;
 }
+.bg03{
+  padding-top: 50px;
+  width: auto;
+  height: 1080px;
+  background-attachment: relative;
+  background-repeat: no-repeat;
+}
 
 /*Menu bar*/
 .sidebar {
@@ -234,4 +241,43 @@ h1,h2,h3,h4,h5{
 @keyframes Eff2 {
   0% { opacity: 1; top: 0px; transform: scale(1);}
   40% { opacity: 0; top: 200px; transform: scale(0);}
+}
+.Eff3 {
+  transition: .5s;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.Eff3:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0 0 50px #32CD32;
+}
+.rightop{
+  position: relative;
+  animation-name: rightop;
+  animation-duration: 2.5s;
+}
+@keyframes rightop { 
+  from{ right: 1000px; opacity:0 ;transform: rotate(0deg);} 
+  to{ right: 0px; opacity:1 ;transform: rotate(360deg);}
+}
+.leftop{
+  position: relative;
+  animation-name: leftop;
+  animation-duration: 2.5s;
+}
+@keyframes leftop { 
+  from{ right: -1000px; opacity:0 ;transform: rotate(0deg);} 
+  to{ right: 0px; opacity:1 ;transform: rotate(-360deg);}
+}
+.Eff4{
+  position: relative;
+  animation-name: Eff4;
+  animation-duration: 1.5s;
+  
+}
+@keyframes Eff4 { 
+  from{ bottom: -100px; opacity:0 ;} 
+  to{ bottom: 0px; opacity:1 ;}
 }

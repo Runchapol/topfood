@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi&display=swap');
+
+html,body {
+    background: url(img/bg01.jpg) center center / cover no-repeat;
+    background-attachment: relative;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+img{
+	width: 250px;
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.img1{
+	width: auto;
+	height: 400px;
+}
+
+.fm{
+	width: 50%;
+	height: auto;
+}
+.Eff1:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+	box-shadow: 0 0 50px #32CD32;
+}
+.Eff1{
+	transition: .5s;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+}
+h1, h2, h3, h4, h5{
+	text-align: center;
+	font-family: 'Pridi', serif;
+	color: #FFFF8C;
+}
+.b01{
+	position: absolute;
+	width: 600px;
+	height: 400px;
+	right: -600px;
+	top: 0px;
+}
+.b02{
+	position: absolute;
+	right: -35px;
+	top: 40px;
+}
+.b03{
+	position: absolute;
+	right: -35px;
+	top: 290px;
+}
+.b04{
+	position: absolute;
+	right: 170px;
+	top: 50px;
+}
+.b05{
+	position: absolute;
+	right: 150px;
+	top: 290px;
+}
+.c02{
+	position: absolute;
+	right: -35px;
+}
+.c03{
+	position: absolute;
+	right: -75px;
+	top: 230px;
+}
+.c04{
+	position: absolute;
+	right: 200px;
+	top: 35px;
+}
+.c05{
+	position: absolute;
+	right: 150px;
+	top: 230px;
+}
+.e02{
+	position: absolute;
+	right: -35px;
+}
+.e03{
+	position: absolute;
+	right: -65px;
+	top: 260px;
+}
+.e04{
+	position: absolute;
+	right: 200px;
+}
+.e05{
+	position: absolute;
+	right: 150px;
+	top: 200px;
+}
+.e06{
+	position: absolute;
+	right: 1px;
+	top: 270px;
+}
+
+.leftop{
+	position: relative;
+	animation-name: leftop;
+	animation-duration: 2.5s;
+}
+@keyframes leftop { 
+  from{ right: -1000px; opacity:0 ;transform: rotate(0deg);} 
+  to{ right: 0px; opacity:1 ;transform: rotate(-360deg);}
+}
+
+.rightop{
+	position: relative;
+	animation-name: rightop;
+	animation-duration: 2.5s;
+}
+@keyframes rightop { 
+  from{ right: 1000px; opacity:0 ;transform: rotate(0deg);} 
+  to{ right: 0px; opacity:1 ;transform: rotate(360deg);}
+}
+
+.Eff_2{
+	position: relative;
+	animation-name: Eff_2;
+	animation-duration: 1.5s;
+	
+}
+@keyframes Eff_2 { 
+  from{ bottom: -100px; opacity:0 ;} 
+  to{ bottom: 0px; opacity:1 ;}
+}
+
+.Eff_3{
+	animation-name: Eff_3;
+	animation-duration: 1.5s;
+}
+@keyframes Eff_3 { 
+  from{ transform: rotate(90deg); opacity:0 ;} 
+  to{ transform: rotate(0deg); opacity:1 ;}
+}
+
+.Eff_4{
+	animation-name: Eff_4;
+	animation-duration: 1.5s;
+}
+@keyframes Eff_4 { 
+  from{ transform: scale(0); opacity:0 ;} 
+  to{ transform: scale(1); opacity:1 ;}
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	cursor: pointer;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.fix{
+	position: fixed;
+	border-radius: 25%;
+	top: 40%;
+	right: 5%;
+	width: 100px;
+	height: 100px;
+	background-image: url('img/bmi.png');
+}
+a{
+	color: #00BFFF;
+}
+
+.pira{
+	width: 100%;
+	height: auto;
+}
+.cont {
+  position: relative;
+}
+.fg {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cont:hover .fg {
+  opacity: 0.3;
+}
+
+.cont:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
