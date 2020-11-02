@@ -11,7 +11,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	
-	<link href="https://fonts.google.com/specimen/Pridi?subset=thai" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=K2D:wght@300&display=swap" rel="stylesheet">
 </head>
 <body background="img/bg02.jpg">
 	<div id="mySidebar" class="sidebar">
@@ -20,6 +20,13 @@
 		<a class="dropdown-btn01">เมนูอาหาร</a>
 		<div class="dropdown-container">
 			<a href="">ข้าวขาหมู</a>
+            <a href="">ข้าวไข่เจียว</a>
+            <a href="">แฮมเบอร์เกอร์</a>
+			<a href="">ราเม็ง</a>
+			<a href="">ข้าวมันไก่</a>
+            <a href="">ข้าวผัดกุ้ง</a>
+            <a href="">ข้าวกะเพราไข่ดาว</a>
+			<a href="">สเต็ก</a>
 		</div>
 		<a href="5muu.html">สารอาหาร</a>
 		<a href="bmi.html">คำนวณ BMI</a>
@@ -27,28 +34,28 @@
 
 	<button class="openbtn" onclick="openNav()">☰ Menu</button>
 	<div class="bg03" style="height: auto;">
-		<h1 class="Eff4 title">คำนวณ BMI</h1>
+		<h1 class="Eff4 title">คำนวณ BMI</h1><br><br>
 		<div id="test" class="container">
-			<h2><b class="Eff4"><i>น้ำหนัก&emsp; (กิโลกรัม) :&emsp;</i></b><br><input class="rightop" type="number" placeholder="เช่น 50" v-model="w"></h2><br>
-			<h2><b class="Eff4"><i>ส่วนสูง&emsp; (เซนติเมตร):&emsp;&emsp;&emsp;</i></b><br><input class="leftop" type="number" placeholder="เช่น 1.7" v-model="h"></h2>
+			<h2><b class="Eff4"><i>น้ำหนัก&emsp; (กิโลกรัม) :</i></b><br><br><input class="Eff4" type="number" placeholder="เช่น 50" v-model="w" style="border-radius: 8%;"></h2><br>
+			<h2><b class="Eff4"><i>ส่วนสูง&emsp; (เซนติเมตร):</i></b><br><br><input class="Eff4" type="number" placeholder="เช่น 1.7" v-model="h" style="border-radius: 8%;"></h2>
 			<br>
-			<h5 class="Eff4">ค่า BMI ของคุณคือ <br><font style="font-size: 50px;"> {{cal()}} !</font></h5>
+			<h5 class="Eff4" style="font-size: 40px;">ค่า BMI ของคุณคือ <br><font style="font-size: 60px;"> {{cal()}} !</font></h5><br><br>
 			<div id="pic"></div><br>
-			<h5 class="Eff4" style="font-size: 40px;">{{res()}}</h5>
-			<h5 class="Eff4" style="font-size: 30px;">{{rec()}}</h5>
+			<h5 class="Eff4" style="font-size: 40px;">{{res()}}</h5><br>
+			<h5 class="Eff4" style="font-size: 30px;">{{rec()}}</h5><br><br>
 			<div id="rec"></div>
 		</div>
-	</div>
+	</div><br><br><br>
 	<div class="foot">
 		<div class="row">
-			<div class="col-4" style="padding-left: 5%; padding-top: 50px;">
-				<a href="javascript:history.back(1)">ย้อนกลับ</a>
+			<div class="col-4">
+				<a href="javascript:history.back(1)"><img src="img/22.png" class="som1"></a>
 			</div>
 			<div class="col-4" style="padding-top: 40px;">
-				<h1 class="head4">จัดทำโดยผมเอง</h1>
+				<h1 class="head4">อาหารยอดฮิต</h1>
 			</div>
-			<div class="col-4" style="padding-top: 50px; padding-left: 25%;">
-				<a href="">ถัดไป</a>
+			<div class="col-4">
+				<a href=""><img src="img/11.png" class="som2"></a>
 			</div>
 		</div>
 	</div>
@@ -64,8 +71,8 @@
 			},
 			methods:{
 				cal: function(){
-					let a = parseFloat(this.h)/100
-					let x = parseFloat(this.w)/(parseFloat(a)*parseFloat(a))
+					let b = parseFloat(this.h)/100
+					let x = parseFloat(this.w)/(parseFloat(b)*parseFloat(b))
 					return x.toFixed(1)
 				},
 				res: function(){
@@ -103,7 +110,7 @@
 					else{
 						var img = `<img src="${imgPng[5]}" style="width:auto; height:300px;" class="middle">`
 						document.getElementById("pic").innerHTML=img
-						return "คุณปริระยะสุดท้าย!"
+						return "คุณอ้วนเกินไปแล้ว!"
 					}
 				},
 				rec: function(){
@@ -115,19 +122,19 @@
 						var img = `<div class="row">
 										<div class="col-3">
 											<a href="kamu.html"><h2>ข้าวขาหมู</h2><br>
-											<img class="Eff3" src="img/kamu01.png"></a>
+											<img class="Eff3 middle" src="img/kamu01.png"></a>
 										</div>
 										<div class="col-3">
 											<a href="munkai.html"><h2>ข้าวมันไก่</h2><br>
-											<img class="Eff3" src="img/Munkai.png"></a>
+											<img class="Eff3 middle" src="img/Munkai.png"></a>
 										</div>
 										<div class="col-3">
 											<a href="burger.html"><h2>เบอร์เกอร์</h2><br>
-											<img class="Eff3" src="img/bk01.png"></a>
+											<img class="Eff3 middle" src="img/bk01.png"></a>
 										</div>
 										<div class="col-3">
 											<a href="Steak.html"><h2>สเต็ก</h2><br>
-											<img class="Eff3" src="img/Steak.png"></a>
+											<img class="Eff3 middle" src="img/Steak.png"></a>
 										</div>
 									</div>`
 						document.getElementById("rec").innerHTML=img
@@ -137,15 +144,15 @@
 						var img = `<div class="row">
 										<div class="col-4">
 											<a href="kaijeaw.html"><h2>ข้าวไข่เจียว</h2><br>
-											<img class="Eff3" src="img/kaijeaw.png"></a>
+											<img class="Eff3 middle" src="img/kaijeaw.png"></a>
 										</div>
 										<div class="col-4">
 											<a href="ramen.html"><h2>ราเม็ง</h2><br>
-											<img class="Eff3" src="img/ramen.png"></a>
+											<img class="Eff3 middle" src="img/ramen.png"></a>
 										</div>
 										<div class="col-4">
 											<a href="Steak.html"><h2>สเต็ก</h2><br>
-											<img class="Eff3" src="img/Steak.png"></a>
+											<img class="Eff3 middle" src="img/Steak.png"></a>
 										</div>
 									</div>`
 						document.getElementById("rec").innerHTML=img
@@ -155,15 +162,15 @@
 						var img = `<div class="row">
 										<div class="col-4">
 											<a href="kaijeaw.html"><h2>ข้าวไข่เจียว</h2><br>
-											<img class="Eff3" src="img/kaijeaw.png"></a>
+											<img class="Eff3 middle" src="img/kaijeaw.png"></a>
 										</div>
 										<div class="col-4">
 											<a href="Kapal.html"><h2>ข้าวกะเพราไข่ดาว</h2><br>
-											<img class="Eff3" src="img/Kapal.png"></a>
+											<img class="Eff3 middle" src="img/Kapal.png"></a>
 										</div>
 										<div class="col-4">
 											<a href="Steak.html"><h2>สเต็ก</h2><br>
-											<img class="Eff3" src="img/Steak.png"></a>
+											<img class="Eff3 middle" src="img/Steak.png"></a>
 										</div>
 									</div>`
 						document.getElementById("rec").innerHTML=img
@@ -173,11 +180,11 @@
 						var img = `<div class="row">
 										<div class="col-6">
 											<a href="kaijeaw.html"><h2>ข้าวไข่เจียว</h2><br>
-											<img class="Eff3" src="img/kaijeaw.png"></a>
+											<img class="Eff3 middle" src="img/kaijeaw.png"></a>
 										</div>
 										<div class="col-6">
 											<a href="kung.html"><h2>ข้าวผัดกุ้ง</h2><br>
-											<img class="Eff3" src="img/kk02.png"></a>
+											<img class="Eff3 middle" src="img/kk02.png"></a>
 										</div>
 									</div>`
 						document.getElementById("rec").innerHTML=img
@@ -187,11 +194,11 @@
 						var img = `<div class="row">
 										<div class="col-6">
 											<a href="kaijeaw.html"><h2>ข้าวไข่เจียว</h2><br>
-											<img class="Eff3" src="img/kaijeaw.png"></a>
+											<img class="Eff3 middle" src="img/kaijeaw.png"></a>
 										</div>
 										<div class="col-6">
 											<a href="ramen.html"><h2>ราเม็ง</h2><br>
-											<img class="Eff3" src="img/ramen.png"></a>
+											<img class="Eff3 middle" src="img/ramen.png"></a>
 										</div>
 									</div>`
 						document.getElementById("rec").innerHTML=img

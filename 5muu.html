@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=K2D:wght@300&display=swap" rel="stylesheet">
+</head>
+<body background="img/bg02.jpg">
+	<div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		<a href="index.html">หน้าหลัก</a>
+		<a class="dropdown-btn01">เมนูอาหาร</a>
+		<div class="dropdown-container">
+			<a href="">ข้าวขาหมู</a>
+		</div>
+		<a href="5muu.html">สารอาหาร</a>
+		<a href="bmi.html">คำนวณ BMI</a>
+	</div>
+
+	<button class="openbtn" onclick="openNav()">☰ Menu</button>
+	<div class="bg01" id="h1">
+		<h1 class="title"><b>สารอาหารหลัก 5 หมู่</b></h1>
+		<div class="cont">
+			<div class="row">
+				<div class="col">
+					<img src="img/pro.jpg" class="middle Eff2" style="padding-top: 5%;">
+				</div>
+				<div class="col">
+					<div class="Eff1">
+						<h2 style="font-size: 50px;">โปรตีน</h2>
+						<h1 style="font-size: 30px;">โปรตีน คือสารอาหารที่ประกอบด้วยกรดอะมิโนจำเป็นสำหรับร่างกาย มีหน้าที่สร้างความแข็งแรงและช่วยในการทำงานของกระดูก กล้ามเนื้อ และผิวหนัง แม้ร่างกายของคนเราจะสามารถสร้างกรดอะมิโนได้เอง 9 ชนิด แต่ก็ยังจำเป็นต้องได้รับกรดอะมิโนอีก 11 ชนิดเพิ่มเติมจากอาหารจำพวกเนื้อสัตว์ ผลิตภัณฑ์จากสัตว์ ถั่วชนิดต่าง ๆ รวมถึงข้าวและธัญพืช ซึ่งประกอบด้วยกรดอะมิโนจำเป็นอย่างครบถ้วนและเพียงพอต่อความต้องการของร่างกาย</h1>
+					</div>
+				</div>
+			</div>
+			<hr style="border: 5px solid #FFB200;">
+			<div class="row">
+				<div class="col">
+					<div class="Eff1">
+						<h2 style="font-size: 50px;">คาร์โบไฮเดรต</h2>
+						<h1 style="font-size: 30px;">คาร์โบไฮเดรตเป็นสารอาหารให้พลังงานที่สำคัญกับร่างกายของเรา ให้ความอบอุ่น และช่วยทำให้ร่างกายสามารถเคลื่อนไหวเพื่อทำงานหรือประกอบกิจกรรมต่าง ๆ ได้ ซึ่งถ้าหากร่างกายขาดสารอาหารประเภทนี้ ร่างกายก็จะเหนื่อยล้า อ่อนเพลีย เพราะสมองและกล้ามเนื้อต้องการกลูโคสจากคาร์โบไฮเดรตมาช่วยในการทำงาน หากขาดคาร์โบไฮเดรตไปก็จะทำให้ขาดพลังงานไปด้วย อีกทั้งยังอาจจะรู้สึกหงุดหงิด สมองไม่สดใสเพราะขาดกลูโคสมากระตุ้นการทำงาน ทำให้อารมณ์แปรปรวนง่ายเพราะสารเคมีในร่างกายขาดความสมดุล</h1>
+					</div>
+				</div>
+				<div class="col">
+					<img src="img/carb.jpg" class="middle Eff2" style="padding-top: 5%;">
+				</div>
+			</div>
+			<hr style="border: 5px solid #FFB200;">
+			<div class="row">
+				<div class="col">
+					<img src="img/vit.jpg" class="middle Eff2" style="padding-top: 2%;">
+				</div>
+				<div class="col">
+					<div class="Eff1">
+						<h2 style="font-size: 50px;">เกลือแร่</h2>
+						<h1 style="font-size: 30px;">อาหารหมู่ที่ 3 เป็นผักใบเขียวและพืชผักชนิดต่าง ๆ ซึ่งแหล่งของสารอาหารประเภทแร่ธาตุ ใยอาหาร และกลุ่มสารพฤกษเคมีที่ผลิตโดยพืช เช่น เบต้าแคโรทีน ที่พบในผักสีเหลือง-ส้ม อย่างแครอต  ดอกโสน พริกเหลือง เป็นต้น อีกทั้งยังพบสารต้านอนุมูลอิสระที่ชื่อว่าไลโคปีน ได้จากผักที่มีสีแดงอย่างมะเขือเทศด้วย ซึ่งสารพฤกษเคมีเหล่านี้มีคุณสมบัติต่อต้านอนุมูลอิสระอันเป็นสาเหตุของความเสื่อมสภาพในร่างกาย</h1>
+					</div>
+				</div>
+			</div>
+			<hr style="border: 5px solid #FFB200;">
+			<div class="row">
+				<div class="col">
+					<div class="Eff1">
+						<h2 style="font-size: 50px;">วิตามิน</h2>
+						<h1 style="font-size: 30px;">อาหารหมู่ที่ 4 คือผลไม้ชนิดต่าง ๆ ซึ่งนอกจากผลไม้จะอุดมไปด้วยวิตามิน แร่ธาตุแล้ว ผลไม้ยังมีคาร์โบไฮเดรตและน้ำตาลอยู่มากกว่าผัก จึงให้พลังงานกับร่างกายได้พอประมาณ อีกทั้งในผลไม้ทุกชนิดยังมีเส้นใยอาหารค่อนข้างสูงด้วย</h1>
+					</div>
+				</div>
+				<div class="col">
+					<img src="img/vita.jpg" class="middle Eff2" style="padding-top: 0%;">
+				</div>
+			</div>
+			<hr style="border: 5px solid #FFB200;">
+			<div class="row">
+				<div class="col">
+					<img src="img/fat.jpg" class="middle Eff2" style="padding-top: 2%;">
+				</div>
+				<div class="col">
+					<div class="Eff1">
+						<h2 style="font-size: 50px;">ไขมัน</h2>
+						<h1 style="font-size: 30px;">อาหารหมู่ที่ 5 ได้แก่ ไขมันจากปลา เช่น ปลาทู ปลาช่อน ไขมันจากสัตว์ เช่น น้ำมันหมู น้ำมันตับปลา หรือไขมันจากพืช เช่น น้ำมันถั่วเหลือง น้ำมันจากธัญพืช น้ำมันปาล์ม น้ำมันมะกอก น้ำมันอะโวคาโด หรือน้ำมันมะพร้าว ซึ่งไขมันเหล่านี้จัดเป็นแหล่งพลังงานสำคัญของร่างกาย มีคุณประโยชน์ในด้านให้ความอบอุ่นแก่ร่างกาย แต่ทั้งนี้ก็ควรรับประทานไขมันอย่างพอเหมาะ</h1>
+					</div>
+				</div>
+			</div>
+		</div><br><br><br>
+		<div class="foot">
+			<div class="row">
+				<div class="col-4">
+					<a href="javascript:history.back(1)"><img src="img/22.png" class="som1"></a>
+				</div>
+				<div class="col-4" style="padding-top: 40px;">
+					<h1 class="head4">อาหารยอดฮิต</h1>
+				</div>
+				<div class="col-4">
+					<a href=""><img src="img/11.png" class="som2"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
