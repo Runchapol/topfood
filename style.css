@@ -9,6 +9,15 @@ h1,h2,h3,h4,h5{
 	text-align: center;
   font-family: 'K2D', sans-serif;
 }
+.fix{
+  position: fixed;
+  border-radius: 25%;
+  top: 12%;
+  left: 3%;
+  width: 100px;
+  height: 100px;
+  background-image: url('img/bmi.png');
+}
 .ff1{
   color: yellow;
 }
