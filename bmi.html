@@ -26,11 +26,11 @@
 	</div>
 
 	<button class="openbtn" onclick="openNav()">☰ Menu</button>
-	<div class="bg03">
-		<h1 class="Eff4">คำนวณ BMI</h1>
+	<div class="bg03" style="height: auto;">
+		<h1 class="Eff4 title">คำนวณ BMI</h1>
 		<div id="test" class="container">
-			<b class="Eff4"><i>น้ำหนัก&emsp; (กิโลกรัม) :&emsp;</i></b><input class="rightop" type="number" placeholder="เช่น 50" v-model="w"><br>
-			<b class="Eff4"><i>ส่วนสูง&emsp; (เมตร):&emsp;&emsp;&emsp;</i></b><input class="leftop" type="number" placeholder="เช่น 1.7" v-model="h">
+			<h2><b class="Eff4"><i>น้ำหนัก&emsp; (กิโลกรัม) :&emsp;</i></b><br><input class="rightop" type="number" placeholder="เช่น 50" v-model="w"></h2><br>
+			<h2><b class="Eff4"><i>ส่วนสูง&emsp; (เซนติเมตร):&emsp;&emsp;&emsp;</i></b><br><input class="leftop" type="number" placeholder="เช่น 1.7" v-model="h"></h2>
 			<br>
 			<h5 class="Eff4">ค่า BMI ของคุณคือ <br><font style="font-size: 50px;"> {{cal()}} !</font></h5>
 			<div id="pic"></div><br>
@@ -60,11 +60,12 @@
 			el: '#test',
 			data: {
 				w: 0,
-				h: 1.5
+				h: 1
 			},
 			methods:{
 				cal: function(){
-					let x = parseFloat(this.w)/(parseFloat(this.h)*parseFloat(this.h))
+					let a = parseFloat(this.h)/100
+					let x = parseFloat(this.w)/(parseFloat(a)*parseFloat(a))
 					return x.toFixed(1)
 				},
 				res: function(){
