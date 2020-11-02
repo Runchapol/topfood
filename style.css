@@ -9,6 +9,9 @@ h1,h2,h3,h4,h5{
 	text-align: center;
   font-family: 'K2D', sans-serif;
 }
+.ff1{
+  color: yellow;
+}
 .a1{
   height: 250px;
   width: auto;
@@ -47,7 +50,7 @@ h1,h2,h3,h4,h5{
 	display: block;
 }
 .title{
-  font-size: 60px;
+  font-size: 80px;
 }
 .head1{
   margin-right: 30%;
@@ -101,14 +104,14 @@ h1,h2,h3,h4,h5{
 .som1{
   position: relative;
   left: 20%;
-  top: -15%;
+  top: 25%;
   width: 30%;
   transition: .5s;
 }
 .som2{
   position: relative;
   left: 35%;
-  top: -15%;
+  top: 25%;
   width: 30%;
   transition: .5s;
 }
@@ -230,10 +233,10 @@ h1,h2,h3,h4,h5{
 }
 @keyframes an03 {
   0%{ opacity: 0; top: 1280px;}
-  30% { opacity: 0; top: 1280px;}
+  20% { opacity: 0; top: 1280px;}
   40% { opacity: 1; top: 1080px;}
-  50% { opacity: 1; top: 1080px;}
-  70% { opacity: 0; top: 1280px;}
+  60% { opacity: 1; top: 1080px;}
+  80% { opacity: 0; top: 1280px;}
 }
 .an04 {
   position: absolute;
