@@ -354,6 +354,20 @@ h1,h2,h3,h4,h5{
   from{ bottom: -100px; opacity:0 ;} 
   to{ bottom: 0px; opacity:1 ;}
 }
+.Eff5{
+  position: relative;
+  animation: Eff5 4s linear 1s infinite alternate;;
+}
+@keyframes Eff5 { 
+  0%   { opacity: 1; }
+  16.6%  { opacity: 0; }
+  32.2%  { opacity: 1; }
+  48.8%  { opacity: 0; }
+  65.4% { opacity: 1; }
+  82.0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 .ForPira{
 	position: relative;
 	animation-name: Eff_2;
