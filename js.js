@@ -23,20 +23,6 @@
 		  });
 		}
 
-		var dropdown02 = document.getElementsByClassName("dropdown-btn02");
-		var j;
-		for (j = 0; j < dropdown02.length; j++) {
-		  dropdown02[j].addEventListener("click", function() {
-		  this.classList.toggle("active");
-		  var dropdownContent = this.nextElementSibling;
-		  if (dropdownContent.style.display === "block") {
-		  dropdownContent.style.display = "none";
-		  } else {
-		  dropdownContent.style.display = "block";
-		  }
-		  });
-		}
-
 		function change(){
 			document.getElementById("qs").style.opacity = "0"
 			document.getElementById("qs").style.cursor = "default"

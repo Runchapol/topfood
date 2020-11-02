@@ -11,9 +11,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	
-	<link href="https://fonts.google.com/specimen/Pridi?subset=thai" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=K2D:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
+<body background="img/bg02.jpg">
 	<div id="mySidebar" class="sidebar">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 		<a href="index.html">หน้าหลัก</a>
@@ -21,68 +21,44 @@
 		<div class="dropdown-container">
 			<a href="">ข้าวขาหมู</a>
 		</div>
-		<a class="dropdown-btn02">สารอาหาร</a>
-		<div class="dropdown-container">
-			<a href="">โปรตีน</a>
-			<a href="">คาร์โบไฮเดรต</a>
-			<a href="">วิตามิน</a>
-			<a href="">เกลือแร่</a>
-			<a href="">ไขมัน</a>
-		</div>
+		<a href="5muu.html">สารอาหาร</a>
 		<a href="bmi.html">คำนวณ BMI</a>
 	</div>
 
 	<button class="openbtn" onclick="openNav()">☰ Menu</button>
 	<div class="bg01" id="h1">
-		<h1>ข้าวขาหมูวว</h1>
+		<h1 class="title">ข้าวขาหมูวว</h1>
 		<div class="cont">
 			<div class="row">
 				<div class="col">
 					<img src="img/kamu01.png" class="middle Eff2">
 				</div>
 				<div class="col">
-					<div class="head01 Eff1">
-						<h3>ทำไมมัน ห อ ม ได้ขนาดนี้</h3>
-						<h2>"เพราะความอร่อย ต้องย่อยยาก"</h2>
+					<div class="Eff1">
+						<h3 class="head1">ทำไมมัน ห อ ม ได้ขนาดนี้</h3>
+						<h2 class="head01">"เพราะความอร่อย ต้องย่อยยาก"</h2>
 						<h1></h1>
 					</div>
 				</div>
 			</div>
+			<div class="an06">
+				<img src="img/a01.png" class="a1">
+			</div>
 		</div>
 	</div>
 	<div class="bg02" id="h2">
-		<div class="cont" style="height: 1080px;">
-			<div class="row" style="height: 540px;">
-				<div class="col-6">
-					<img src="img/01.png" class="middle an01">
-				</div>
-				<div class="col-6">
-					<div class="head02 an02">
-						<h3>โปรตีน 62 กรัม</h3>
-						<h3>คาร์โบไฮเดรต 22 กรัม</h3>
-						<h3>วิตามิน 2 กรัม</h3>
-						<h3>เกลือแร่ 2 กรัม</h3>
-						<h3>ไขมัน 18 กรัม</h3>
-					</div>
-				</div>
-			</div>
-			<div class="row" style="height: 540px;">
-				<div class="col-6">
-					<div>
-						<h1 class="head01 an03">กราฟสารอาหาร</h1>
-					</div>
-				</div>
-				<div class="col-6">
-					<div id="piechart" class="an04"></div>
-				</div>
-
+		<div class="container">
+			<div>
+				<div class="head02 an03"><h2 class="head2">ปริมาณสารอาหาร (ต่อกรัม)<h2></div>
+				<div id="piechart" class="an04 gr"></div>
 			</div>
 		</div>
 	</div>
 
 	<div class="bg01" id="h3">
-		<h1 class="an05" style="opacity: 0;">คุณคิดว่าเมนูนี้กี่แคลลอรี่</h1>
-		<img src="img/ans.png" id="qs" class="middle qs" onclick="change()">
+		<h1 class="an05 head2" style="opacity: 0;">คุณคิดว่าเมนูนี้กี่แคลลอรี่</h1>
+		<h1 class="an05 head3" style="opacity: 0;">ลองคลิกที่อาหารสิ~~</h1>
+		<img src="img/01.png" id="qs" class="middle qs" onclick="change()">
 		<img src="img/frame.png" id="ans" class="middle ans">
 	</div>
 
@@ -92,7 +68,7 @@
 				<a href="javascript:history.back(1)">ย้อนกลับ</a>
 			</div>
 			<div class="col-4" style="padding-top: 40px;">
-				<h1>จัดทำโดยผมเอง</h1>
+				<h1 class="head4">จัดทำโดยผมเอง</h1>
 			</div>
 			<div class="col-4" style="padding-top: 50px; padding-left: 25%;">
 				<a href="">ถัดไป</a>
@@ -101,13 +77,13 @@
 	</div>
 	<div class="ul">
         <svg height="100" width="100" onclick="location.href='#h1';" style="cursor:pointer;" class="navig">
-            <circle cx="20" cy="20" r="7" stroke="white" stroke-width="2"/>
+            <circle cx="20" cy="20" r="7" stroke="gold" stroke-width="2"/>
         </svg>
         <svg height="100" width="100" onclick="location.href='#h2';" style="cursor:pointer;" class="navig">
-            <circle cx="20" cy="20" r="7" stroke="white" stroke-width="2"/>
+            <circle cx="20" cy="20" r="7" stroke="gold" stroke-width="2"/>
         </svg>
         <svg height="100" width="100" onclick="location.href='#h3';" style="cursor:pointer;" class="navig">
-            <circle cx="20" cy="20" r="7" stroke="white" stroke-width="2"/>
+            <circle cx="20" cy="20" r="7" stroke="gold" stroke-width="2"/>
         </svg>
     </div>
 
@@ -130,7 +106,7 @@
 		]);
 
 		  // Optional; add a title and set the width and height of the chart
-		  var options = {'title':'ปริมาณสารอาหาร', 'width':550, 'height':400};
+		  var options = {'title':'', 'width':1080, 'height':920};
 
 		  // Display the chart inside the <div> element with id="piechart"
 		  var chart = new google.visualization.PieChart(document.getElementById('piechart'));

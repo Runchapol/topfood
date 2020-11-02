@@ -7,16 +7,21 @@ img{
 }
 h1,h2,h3,h4,h5{
 	text-align: center;
+  font-family: 'K2D', sans-serif;
+}
+.a1{
+  height: 250px;
+  width: auto;
 }
 .foot{
   width: 100%;
   height: 128px;
-  background-color: #1919a4;
+  background-image: url("img/bg01.jpg");
 }
 .qs{
   transition: 1s;
   position: relative;
-  top: 50px;
+  top: -50px;
   cursor: pointer;
   z-index: 5;
 }
@@ -41,27 +46,50 @@ h1,h2,h3,h4,h5{
 	margin-right: auto;
 	display: block;
 }
+.title{
+  font-size: 60px;
+}
+.head1{
+  margin-right: 30%;
+  padding-top: 15%;
+  font-size: 40px;
+}
 .head01{
 	margin-right: 30%;
-	padding-top: 20%;
+  font-size: 50px;
 }
 .head02{
-	margin-right: 30%;
-	padding-top: 10%;
+	position: absolute;
+  top: 1080px;
+  left: 30%;
+  z-index: 5;
+}
+.head2{
+  font-size: 70px;
+}
+.head3{
+  font-size: 60px;
+
+}
+.head4{
+  color: yellow;
+  font-size: 50px;
+}
+.gr{
+  box-shadow: 0 0 50px #FFDC77;
 }
 .bg01{
 	padding-top: 50px;
 	width: auto;
 	height: 970px;
-	background-image: url('img/bg01.jpg');
+	background-image: url('');
   background-attachment: relative;
   background-repeat: no-repeat;
 }
 .bg02{
 	padding-top: 50px;
 	width: auto;
-	height: 1180px;
-	background-color: #00000a;
+	height: 1080px;
 }
 .bg03{
   padding-top: 50px;
@@ -76,7 +104,7 @@ h1,h2,h3,h4,h5{
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   top: 0;
   left: 0;
   background-color: #111;
@@ -121,6 +149,7 @@ h1,h2,h3,h4,h5{
   position: fixed;
   left: 3%;
   top: 3%;
+  z-index: 500;
 }
 
 .openbtn:hover {
@@ -136,12 +165,12 @@ h1,h2,h3,h4,h5{
 }
 .navig:hover {
     filter: drop-shadow(0 0 7px rgb(255, 255, 255, 1));
-    fill: rgb(255, 255, 255, 1);
+    fill: #8AF757;
 }
 
 .navig {
     transition: .3s;
-    fill: rgb(255, 255, 255, 0);
+    fill: #ED4F14;
 }
 
 /*Animation1*/
@@ -183,10 +212,11 @@ h1,h2,h3,h4,h5{
   animation-fill-mode: both;
 }
 @keyframes an03 {
-  38% { opacity: 0; right: 500px;}
-  47% { opacity: 1; right: 50px;}
-  67% { opacity: 1; right: 50px;}
-  87% { opacity: 0; right: 500px;}
+  0%{ opacity: 0; top: 1280px;}
+  30% { opacity: 0; top: 1280px;}
+  40% { opacity: 1; top: 1080px;}
+  50% { opacity: 1; top: 1080px;}
+  70% { opacity: 0; top: 1280px;}
 }
 .an04 {
   position: absolute;
@@ -197,10 +227,11 @@ h1,h2,h3,h4,h5{
   animation-fill-mode: both;
 }
 @keyframes an04 {
-  35% { opacity: 0; transform: scale(0);}
-  47% { opacity: 1; transform: scale(1);}
-  67% { opacity: 1; transform: scale(1);}
-  87% { opacity: 0; transform: scale(0);}
+  0%{ opacity: 0; transform: scale(0);}
+  30% { opacity: 0; transform: scale(0);}
+  40% { opacity: 1; transform: scale(1);}
+  50% { opacity: 1; transform: scale(1);}
+  70% { opacity: 0; transform: scale(0);}
 }
 .an05 {
   position: relative;
@@ -212,8 +243,21 @@ h1,h2,h3,h4,h5{
 }
 @keyframes an05 {
   80% { opacity: 0; top: -100px;}
-  85% { opacity: 1; top:0px;}
+  90% { opacity: 1; top:0px;}
   100%{opacity: 1;}
+}
+.an06 {
+  position: absolute;
+  animation: an06 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  top: 600px;
+}
+@keyframes an06 {
+  0%{ opacity: 1; left: 1250px}
+  40%{ opacity: 0; left: 1800px;}
 }
 
 /*Animation2*/
