@@ -98,7 +98,24 @@ h1,h2,h3,h4,h5{
   background-attachment: relative;
   background-repeat: no-repeat;
 }
-
+.som1{
+  position: relative;
+  left: 20%;
+  top: -15%;
+  width: 30%;
+  transition: .5s;
+}
+.som2{
+  position: relative;
+  left: 35%;
+  top: -15%;
+  width: 30%;
+  transition: .5s;
+}
+.som1:hover, .som2:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
 /*Menu bar*/
 .sidebar {
   height: 100%;
