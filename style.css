@@ -345,3 +345,78 @@ h1,h2,h3,h4,h5{
   from{ bottom: -100px; opacity:0 ;} 
   to{ bottom: 0px; opacity:1 ;}
 }
+.ForPira{
+	position: relative;
+	animation-name: Eff_2;
+	animation-duration: 1.5s;
+	
+}
+@keyframes ForPira { 
+  from{ bottom: -100px; opacity:0 ;} 
+  to{ bottom: 0px; opacity:1 ;}
+}
+.ForPira2{
+	animation-name: Eff_3;
+	animation-duration: 1.5s;
+}
+@keyframes ForPira2 { 
+  from{ transform: rotate(90deg); opacity:0 ;} 
+  to{ transform: rotate(0deg); opacity:1 ;}
+}
+.cont {
+  position: relative;
+}
+.pira{
+	width: 100%;
+	height: auto;
+}
+.fg {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.mi {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.ForPira3{
+	position: relative;
+	animation-name: leftop;
+	animation-duration: 2.5s;
+}
+@keyframes ForPira3 { 
+  from{ right: -1000px; opacity:0 ;transform: rotate(0deg);} 
+  to{ right: 0px; opacity:1 ;transform: rotate(-360deg);}
+}
+.ForPira4{
+	position: relative;
+	animation-name: rightop;
+	animation-duration: 2.5s;
+}
+@keyframes ForPira4 { 
+  from{ right: 1000px; opacity:0 ;transform: rotate(0deg);} 
+  to{ right: 0px; opacity:1 ;transform: rotate(360deg);}
+}
+
+.cont:hover .fg {
+  opacity: 0.3;
+}
+
+.cont:hover .mi {
+  opacity: 1;
+}
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
