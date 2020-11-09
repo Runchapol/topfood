@@ -16,7 +16,8 @@ h1,h2,h3,h4,h5{
   left: 3%;
   width: 100px;
   height: 100px;
-  background-image: url('img/bmi.png');
+  background-image: url('img/bmii.png');
+  color: white;
 }
 .ff1{
   color: black;
