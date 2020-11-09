@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	
+	<link href="https://fonts.googleapis.com/css2?family=K2D:wght@300&display=swap" rel="stylesheet">
+</head>
+<body background="img/bg02.jpg">
+	<div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		<a href="index.html">หน้าหลัก</a>
+		<a class="dropdown-btn01">เมนูอาหาร</a>
+		<div class="dropdown-container">
+			<a href="kamu.html">ข้าวขาหมู</a>
+            <a href="kaijeaw.html">ข้าวไข่เจียว</a>
+            <a href="burger.html">แฮมเบอร์เกอร์</a>
+			<a href="remen.html">ราเม็ง</a>
+			<a href="munkai.html">ข้าวมันไก่</a>
+            <a href="kung.html">ข้าวผัดกุ้ง</a>
+            <a href="Kapal.html">ข้าวกะเพราไข่ดาว</a>
+			<a href="steak.html">สเต็ก</a>
+			<a href="san.html">แซนวิช</a>
+			<a href="salad.html">สลัดผัก</a>
+			<a href="woon.html">ยำวุ้นเส้น</a>
+            <a href="kang.html">แกงจืด</a>
+            <a href="kang.html">ต้มแซ่บเล้ง</a>
+            
+		</div>
+		<a href="5muu.html">สารอาหาร</a>
+		<a href="pira.html">ปีรามิดอาหาร</a>
+		<a href="bmi.html">คำนวณ BMI</a>
+	</div>
+	<div class="fix">
+		<a href="bmi.html"><h5 style="margin-top: 20px; color: black;">ลองวัดค่า BMI กัน!</h5></a>
+	</div>
+	<button class="openbtn" onclick="openNav()">☰ Menu</button>
+	<div class="bg01" id="h1">
+		<h1 class="title"><b>ต้มแซ่บเล้ง</b></h1>
+		<div class="cont">
+			<div class="row">
+				<div class="col">
+					<img src="img/tumsamleang1.png" class="middle Eff2">
+				</div>
+				<div class="col">
+					<div class="Eff1">
+						<h3 class="head1">อร่อย แซ่บซี๊ด</h3>
+						<h2 class="head01">"สะท้านถึงทรวง‼️"</h2>
+						<h1></h1>
+					</div>
+				</div>
+			</div>
+			<div class="an06">
+				<img src="img/hot1.png" class="a1">
+			</div>
+		</div>
+	</div>
+	<div class="bg02" id="h2">
+		<div class="container">
+			<div>
+				<div class="head02 an03"><h2 class="head2">ปริมาณสารอาหาร (ต่อกรัม)<h2></div>
+				<div id="piechart" class="an04 gr"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bg01" id="h3">
+		<h1 class="an05 head2" style="opacity: 0;">คุณคิดว่าเมนูนี้กี่แคลลอรี่</h1>
+		<h1 class="an05 head3" style="opacity: 0;">ลองคลิกที่อาหารสิ~~</h1>
+		<img src="img/tumsamleang2.png" id="qs" class="middle qs" onclick="change()">
+		<img src="img/frame.png" id="ans" class="middle ans">
+	</div>
+
+	<div class="foot">
+		<div class="row">
+			<div class="col-4">
+				<a href="javascript:history.back(1)"><img src="img/22.png" class="som1"></a>
+			</div>
+			<div class="col-4" style="padding-top: 40px;">
+				<h1 class="head4">อาหารยอดฮิต</h1>
+			</div>
+			<div class="col-4">
+				<a href="kaijeaw.html"><img src="img/11.png" class="som2"></a>
+			</div>
+		</div>
+	</div>
+	<div class="ul">
+        <svg height="100" width="100" onclick="location.href='#h1';" style="cursor:pointer;" class="navig">
+            <circle cx="20" cy="20" r="7" stroke="gold" stroke-width="2"/>
+        </svg>
+        <svg height="100" width="100" onclick="location.href='#h2';" style="cursor:pointer;" class="navig">
+            <circle cx="20" cy="20" r="7" stroke="gold" stroke-width="2"/>
+        </svg>
+        <svg height="100" width="100" onclick="location.href='#h3';" style="cursor:pointer;" class="navig">
+            <circle cx="20" cy="20" r="7" stroke="gold" stroke-width="2"/>
+        </svg>
+    </div>
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="js.js"></script>
+	<script type="text/javascript">
+		// Load google charts
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawChart);
+
+		// Draw the chart and set the chart values
+		function drawChart() {
+		  var data = google.visualization.arrayToDataTable([
+		  ['สารอาหาร', 'ต่อจาน'],
+		  ['โปรตีน', 43],
+		  ['คาร์โบไฮเดรต',17],
+		  ['วิตามิน', 2],
+		  ['ไขมัน', 22]
+		]);
+
+		  // Optional; add a title and set the width and height of the chart
+		  var options = {'title':'', 'width':1080, 'height':920};
+
+		  // Display the chart inside the <div> element with id="piechart"
+		  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+		  chart.draw(data, options);
+		}
+	</script>
+</body>
+</html>
