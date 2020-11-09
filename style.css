@@ -348,7 +348,6 @@ h1,h2,h3,h4,h5{
   position: relative;
   animation-name: Eff4;
   animation-duration: 1.5s;
-  
 }
 @keyframes Eff4 { 
   from{ bottom: -100px; opacity:0 ;} 
