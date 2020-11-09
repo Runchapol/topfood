@@ -93,8 +93,8 @@ h1,h2,h3,h4,h5{
 .bg01{
 	padding-top: 50px;
 	width: auto;
-	height: 970px;
-	background-image: url('');
+	height: 970px; 
+	background-color: #ccf6c8;
   background-attachment: relative;
   background-repeat: no-repeat;
 }
@@ -102,6 +102,13 @@ h1,h2,h3,h4,h5{
 	padding-top: 50px;
 	width: auto;
 	height: 1080px;
+  background-color: #fafcc2;
+}
+.bg03{
+  padding-top: 50px;
+  width: auto;
+  height: 970px;
+  background-color: #f6d6ad;
 }
 .bg03{
   padding-top: 50px;
