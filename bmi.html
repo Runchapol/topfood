@@ -13,7 +13,7 @@
 	
 	<link href="https://fonts.googleapis.com/css2?family=K2D:wght@300&display=swap" rel="stylesheet">
 </head>
-<body background="img/bg02.jpg">
+<body>
 	<div id="mySidebar" class="sidebar">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 		<a href="index.html">หน้าหลัก</a>
@@ -61,8 +61,8 @@
 			<h5 class="Eff4" style="font-size: 40px;">{{res()}}</h5><br>
 			<h5 class="Eff4" style="font-size: 30px;">{{rec()}}</h5><br><br>
 			<div id="rec"></div>
-		</div>
-	</div><br><br><br>
+		</div><br><br><br>
+	</div>
 	<div class="foot">
 		<div class="row">
 			<div class="col-4">
@@ -153,23 +153,63 @@
 											<a href="Steak.html"><h2>สเต็ก</h2><br>
 											<img class="Eff3 middle" src="img/Steak.png"></a>
 										</div>
+									</div><br><br><br>
+									<div class="row">
+										<div class="col-3">
+											<a href="mungkai.html"><h2>ข้าวหมกไก่</h2><br>
+											<img class="Eff3 middle" src="img/mungkai1.png"></a>
+										</div>
+										<div class="col-3">
+											<a href="patai.html"><h2>ผัดไท</h2><br>
+											<img class="Eff3 middle" src="img/pt01.png"></a>
+										</div>
+										<div class="col-3">
+											<a href="sukinam.html"><h2>สุกี้น้ำ</h2><br>
+											<img class="Eff3 middle" src="img/suki01.png"></a>
+										</div>
+										<div class="col-3">
+											<a href="muping.html"><h2>ข้าวเหนียวหมูปิ้ง</h2><br>
+											<img class="Eff3 middle" src="img/muping01.png"></a>
+										</div>
 									</div>`
 						document.getElementById("rec").innerHTML=img
 						return "เราขอแนะนำ!"
 					}
 					else if (a > 18.5 && a <= 22.9) {
 						var img = `<div class="row">
-										<div class="col-4">
+										<div class="col-3">
 											<a href="kaijeaw.html"><h2>ข้าวไข่เจียว</h2><br>
 											<img class="Eff3 middle" src="img/kaijeaw.png"></a>
 										</div>
-										<div class="col-4">
+										<div class="col-3">
 											<a href="salad.html"><h2>สลัดผัก</h2><br>
 											<img class="Eff3 middle" src="img/salad2.png"></a>
 										</div>
-										<div class="col-4">
+										<div class="col-3">
 											<a href="Steak.html"><h2>สเต็ก</h2><br>
 											<img class="Eff3 middle" src="img/Steak.png"></a>
+										</div>
+										<div class="col-3">
+											<a href="kang.html"><h2>แกงจืด</h2><br>
+											<img class="Eff3 middle" src="img/gang1.png"></a>
+										</div>
+									</div><br><br><br>
+									<div class="row">
+										<div class="col-3">
+											<a href="san.html"><h2>แซนวิช</h2><br>
+											<img class="Eff3 middle" src="img/sand2.png"></a>
+										</div>
+										<div class="col-3">
+											<a href="tumyumkung.html"><h2>ต้มยำกุ้ง</h2><br>
+											<img class="Eff3 middle" src="img/tumyumkung1.png"></a>
+										</div>
+										<div class="col-3">
+											<a href="woon.html"><h2>ยำวุ้นเส้น</h2><br>
+											<img class="Eff3 middle" src="img/yumwun1.png"></a>
+										</div>
+										<div class="col-3">
+											<a href="muping.html"><h2>ข้าวเหนียวหมูปิ้ง</h2><br>
+											<img class="Eff3 middle" src="img/muping01.png"></a>
 										</div>
 									</div>`
 						document.getElementById("rec").innerHTML=img
@@ -213,19 +253,24 @@
 					}
 					else{
 						var img = `<div class="row">
-										<div class="col-4">
+										<div class="col-3">
 											<a href="salad.html"><h2>สลัดผัก</h2><br>
 											<img class="Eff3 middle" src="img/salad2.png"></a>
 										</div>
-										<div class="col-4">
+										<div class="col-3">
 											<a href="woon.html"><h2>ยำวุ้นเส้น</h2><br>
 											<img class="Eff3 middle" src="img/yumwun1.png"></a>
 										</div>
-										<div class="col-4">
+										<div class="col-3">
 											<a href="kang.html"><h2>แกงจืด</h2><br>
 											<img class="Eff3 middle" src="img/gang1.png"></a>
 										</div>
-									</div>`
+										<div class="col-3">
+											<a href="san.html"><h2>แซนวิช</h2><br>
+											<img class="Eff3 middle" src="img/sand2.png"></a>
+										</div>
+									</div><br><br>
+									`
 						document.getElementById("rec").innerHTML=img
 						return "เราขอแนะนำ!"
 					}
