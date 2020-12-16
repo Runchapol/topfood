@@ -242,14 +242,15 @@ h1,h2,h3,h4,h5{
   animation-fill-mode: both;
 }
 @keyframes an03 {
-  0%{ opacity: 0; top: 1280px;}
-  20% { opacity: 0; top: 1280px;}
+  0%{ opacity: 0; top: 1180px;}
+  20% { opacity: 0; top: 1180px;}
   40% { opacity: 1; top: 1080px;}
   60% { opacity: 1; top: 1080px;}
-  80% { opacity: 0; top: 1280px;}
+  80% { opacity: 0; top: 1180px;}
 }
 .an04 {
-  position: absolute;
+  position: relative;
+  top: 250px;
   animation: an04 1s linear infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
