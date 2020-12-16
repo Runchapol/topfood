@@ -250,7 +250,6 @@ h1,h2,h3,h4,h5{
 }
 .an04 {
   position: relative;
-  top: 250px;
   animation: an04 1s linear infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -1s);
